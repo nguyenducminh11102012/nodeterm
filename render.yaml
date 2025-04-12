@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: web-terminal-node
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: PORT
+        value: 6080
